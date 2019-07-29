@@ -37,5 +37,10 @@ namespace App17.Views
             }
             //colorRectangle.Fill = new SolidColorBrush(color);
         }
+
+        private void ColorComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
