@@ -6,13 +6,110 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
-    <Grid x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
-        <Grid
+    <Grid
+        
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
-            <!--
-                The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
-                Place your content here.
-            -->
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50px"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Column="1" Orientation="Horizontal">
+            <Button Margin="0,0,50,0" Content="Home"></Button>
+            <Button Margin="0,0,50,0" Content="Back"></Button>
+            <Button Margin="0,0,50,0" Content="Forward"></Button>
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <TextBlock Text="Made for you 😊" FontSize="46"></TextBlock>
+                <TextBlock Text="All humans deserve equal" FontStyle="Italic"></TextBlock>
+            </StackPanel>
+
+
+            <Image Grid.Row="1" Source="/Assets/DSC03711_shorter.JPG" Stretch="Fill" ></Image>
+            <StackPanel Grid.Row="2">
+                <TextBlock Text="I aim for this application to serve a lot of people. This may be targeted more at those who have a disability. However, that does not mean if you do not have a disability you are not allowed to use it. In reality, a lot of people may actually have traits of a disaibility but not meet t he threshold, or it may be that someone has not been diagnosed, for lack of time to see a doctor, or perhaps just do not want to go and check. The aim of this application is to imrpove everyone's experiences, if that means that you use this only once in your life, that is perfectly fine, or if you use this every waking minute of your life. This is a non-profit application, at least I hope for it to not be. I aim to help those who are in need, and therefore I do not want to ever charge any of you a penny. That is one thing that annoys me, that copanies charge an absurd amount of money for specialised software for disabled students, and I am here to break that, disrupt that market, and provide all of those features for free, for all students, all parents, all humans 😇 So, help spread this appliation to thsoe who may need it, and let's put a stop to all of these unncessesary charges." TextWrapping="WrapWholeWords"></TextBlock>
+                <TextBlock Grid.Row="2" Text="Salman Chishti aka SalmanMKC on all socials" TextWrapping="WrapWholeWords" FontStyle="Italic"></TextBlock>
+            </StackPanel>
+            <TextBlock Grid.Row="3" FontWeight="Bold">Please fill in your details so that you get a tailored experience</TextBlock>
+            <Grid Margin="20,10,0,0" Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="322"/>
+                    <ColumnDefinition Width="259"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="46"/>
+                    <RowDefinition Height="46"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Gender</TextBlock>
+                <DropDownButton Padding="1" Grid.Column="1" Content="Select" Height="25" Width="310" HorizontalAlignment="Center">
+                    <DropDownButton.Flyout>
+                        <MenuFlyout Placement="Bottom">
+                            <MenuFlyoutItem Text="Male"/>
+                            <MenuFlyoutItem Text="Female"/>
+                            <MenuFlyoutItem Text="Transgender"/>
+                            <MenuFlyoutItem Text="Other"/>
+                            <MenuFlyoutItem Text="Prfer not to say"/>
+                        </MenuFlyout>
+                    </DropDownButton.Flyout>
+                </DropDownButton>
+                <TextBlock VerticalAlignment="Center" Grid.Column="2" FontStyle="Italic" Height="19">Please select your gender</TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Title</TextBlock>
+                <DropDownButton Padding="1" Grid.Row="1" Grid.Column="1" Content="Select" Height="25" Width="310" HorizontalAlignment="Center">
+                    <DropDownButton.Flyout>
+                        <MenuFlyout Placement="Bottom">
+                            <MenuFlyoutItem Text="Mr"/>
+                            <MenuFlyoutItem Text="Mrs"/>
+                            <MenuFlyoutItem Text="Miss"/>
+                            <MenuFlyoutItem Text="Ms"/>
+                            <MenuFlyoutItem Text="Master"/>
+                            <MenuFlyoutItem Text="Dr"/>
+                            <MenuFlyoutItem Text="Prof"/>
+                            <MenuFlyoutItem Text="Prfer not to say"/>
+                        </MenuFlyout>
+                    </DropDownButton.Flyout>
+                </DropDownButton>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" FontStyle="Italic" Height="19">Please select your title that you would like to be referred to as</TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">First Name</TextBlock>
+                <TextBox Height="33" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" PlaceholderText="First Name" Padding="10,3,6,5.9" Margin="6,0,6,0"/>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" FontStyle="Italic" Height="19">Please enter your first name</TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Last name</TextBlock>
+                <TextBox Height="33" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" PlaceholderText="Last Name" Padding="10,3,6,5.9" Margin="6,0,6,0"/>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2" FontStyle="Italic" Height="19">Please enter your last name</TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Date of birth</TextBlock>
+                <DatePicker Grid.Row="4" Grid.Column="1" Width="310" HorizontalAlignment="Center" Height="30" />
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2" FontStyle="Italic" Height="19">Please enter ypur date of birth</TextBlock>
+
+
+            </Grid>
+
+
+
+
+
+
+
         </Grid>
     </Grid>
 </Page>
