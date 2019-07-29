@@ -20,7 +20,7 @@
             <RowDefinition Height="50px"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-
+        
         <StackPanel Grid.Column="1" Orientation="Horizontal">
             <Button Margin="0,0,50,0" Content="Home"></Button>
             <Button Margin="0,0,50,0" Content="Back"></Button>
@@ -56,11 +56,11 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
-                    <RowDefinition Height="76"/>
-                    <RowDefinition Height="43"/>
-                    <RowDefinition Height="58"/>
-                    <RowDefinition Height="5"/>
-                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="46"/>
+                    <RowDefinition Height="46"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Gender</TextBlock>
                 <DropDownButton Padding="1" Grid.Column="1" Content="Select" Height="25" Width="310" HorizontalAlignment="Center">
@@ -90,22 +90,22 @@
                         </MenuFlyout>
                     </DropDownButton.Flyout>
                 </DropDownButton>-->
-                <ComboBox Padding="1" Grid.Row="1" Grid.Column="1" x:Name="colorComboBox" Width="312" Header="Colors" PlaceholderText="Pick a color" SelectionChanged="ColorComboBox_SelectionChanged" VerticalAlignment="Center" Height="68">
+                <ComboBox Margin="5,0,0,0" Padding="1" Grid.Row="1" Grid.Column="1" x:Name="colorComboBox" Width="312" PlaceholderText="Pick a color" SelectionChanged="ColorComboBox_SelectionChanged" VerticalAlignment="Center" Height="20">
                     <x:String>Blue</x:String>
                     <x:String>Green</x:String>
                     <x:String>Red</x:String>
                     <x:String>Yellow</x:String>
                 </ComboBox>
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" FontStyle="Italic" Height="19">Please select your title that you would like to be referred to as</TextBlock>
-                <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Margin="0,3,10,0" Height="19">First Name</TextBlock>
-                <TextBox Height="33" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" PlaceholderText="First Name" Padding="10,3,6,5.9" Margin="6,72,6,0" Grid.RowSpan="2"/>
-                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="3" Grid.Column="2" FontStyle="Italic" Height="19" Margin="0,3,0,0">Please enter your first name</TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">First Name</TextBlock>
+                <TextBox Height="33" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" PlaceholderText="First Name" Padding="10,3,6,5.9" Margin="6,0,6,0"/>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" FontStyle="Italic" Height="19">Please enter your first name</TextBlock>
                 <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Last name</TextBlock>
                 <TextBox Height="33" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" PlaceholderText="Last Name" Padding="10,3,6,5.9" Margin="6,0,6,0"/>
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2" FontStyle="Italic" Height="19">Please enter your last name</TextBlock>
-                <TextBlock Grid.Row="5" Grid.Column="0" VerticalAlignment="Top" Margin="0,4,10,0" Height="19">Date of birth</TextBlock>
-                <DatePicker Grid.Row="4" Grid.Column="1" Width="310" HorizontalAlignment="Center" Height="30" Margin="0,3,0,0" VerticalAlignment="Top" Grid.RowSpan="2" />
-                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="5" Grid.Column="2" FontStyle="Italic" Height="19" Margin="0,4,0,0">Please enter ypur date of birth</TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Date of birth</TextBlock>
+                <DatePicker Grid.Row="4" Grid.Column="1" Width="310" HorizontalAlignment="Center" Height="30" />
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2" FontStyle="Italic" Height="19">Please enter ypur date of birth</TextBlock>
 
 
             </Grid>
