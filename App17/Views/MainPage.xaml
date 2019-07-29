@@ -91,10 +91,6 @@
                     </DropDownButton.Flyout>
                 </DropDownButton>-->
                 <ComboBox Margin="5,0,0,0" Padding="1" Grid.Row="1" Grid.Column="1" x:Name="colorComboBox" Width="312" PlaceholderText="Choose preferred title" SelectionChanged="ColorComboBox_SelectionChanged" VerticalAlignment="Center" Height="20">
-                    <x:String>Blue</x:String>
-                    <x:String>Green</x:String>
-                    <x:String>Red</x:String>
-                    <x:String>Yellow</x:String>
                     <x:String>Mrs</x:String>
                     <x:String>Mr</x:String>
                     <x:String>Miss</x:String>
