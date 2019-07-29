@@ -42,6 +42,7 @@ namespace App17.Views
         private void ColorComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
             GenderPrompt.Text = "";
+            GenderCheckBox.IsChecked = true;
         }
     }
 }
