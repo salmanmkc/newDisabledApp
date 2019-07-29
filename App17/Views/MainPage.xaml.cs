@@ -35,12 +35,13 @@ namespace App17.Views
                     color = Colors.Red;
                     break;
             }
+            
             //colorRectangle.Fill = new SolidColorBrush(color);
         }
 
         private void ColorComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-
+            GenderPrompt.Text = "";
         }
     }
 }

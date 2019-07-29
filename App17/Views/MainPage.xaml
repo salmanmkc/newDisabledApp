@@ -84,7 +84,7 @@
                     <x:String>Prof</x:String>
                     <x:String>Prefer not to say</x:String>
                 </ComboBox>
-                <TextBlock VerticalAlignment="Center" Grid.Column="2" FontStyle="Italic" Height="19">Please select your gender</TextBlock>
+                <TextBlock Name="GenderPrompt" VerticalAlignment="Center" Grid.Column="2" FontStyle="Italic" Height="19">Please select your gender</TextBlock>
                 <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Title</TextBlock>
                 <!--<DropDownButton Padding="1" Grid.Row="1" Grid.Column="1" Content="Select" Height="25" Width="310" HorizontalAlignment="Center">
                     <DropDownButton.Flyout>
