@@ -303,6 +303,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\DefaultIcon.png" />
+    <Content Include="Assets\DSC03711.JPG" />
+    <Content Include="Assets\DSC03711_shorter.jpg" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\map.png" />
     <Content Include="Properties\Default.rd.xml" />
