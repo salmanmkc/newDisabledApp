@@ -75,7 +75,7 @@
                         </MenuFlyout>
                     </DropDownButton.Flyout>
                 </DropDownButton>-->
-                <ComboBox Padding="1" Grid.Column="1" x:Name="genderComboBox" Width="309" PlaceholderText="Choose your gender" SelectionChanged="ColorComboBox_SelectionChanged_1" VerticalAlignment="Center" Height="20" HorizontalAlignment="Center">
+                <ComboBox Padding="1" Grid.Column="1" x:Name="genderComboBox" Width="311" PlaceholderText="Choose your gender" SelectionChanged="ColorComboBox_SelectionChanged_1" VerticalAlignment="Center" Height="20" HorizontalAlignment="Center">
                     <x:String>Mrs</x:String>
                     <x:String>Mr</x:String>
                     <x:String>Miss</x:String>
