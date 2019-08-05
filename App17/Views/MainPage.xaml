@@ -20,7 +20,7 @@
             <RowDefinition Height="50px"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        
+
         <StackPanel Grid.Column="1" Orientation="Horizontal">
             <Button Margin="0,0,50,0" Content="Home"></Button>
             <Button Margin="0,0,50,0" Content="Back"></Button>
@@ -48,6 +48,7 @@
             </StackPanel>
             <TextBlock Grid.Row="3" FontWeight="Bold">Please fill in your details so that you get a tailored experience</TextBlock>
             <Grid Margin="20,10,0,0" Grid.Row="4">
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="200"/>
                     <ColumnDefinition Width="322"/>
@@ -74,7 +75,7 @@
                         </MenuFlyout>
                     </DropDownButton.Flyout>
                 </DropDownButton>-->
-                <ComboBox Margin="5,0,0,0" Padding="1" Grid.Row="0" Grid.Column="1" x:Name="genderComboBox" Width="312" PlaceholderText="Choose your gender" SelectionChanged="ColorComboBox_SelectionChanged_1" VerticalAlignment="Center" Height="20">
+                <ComboBox Padding="1" Grid.Column="1" x:Name="genderComboBox" Width="311" PlaceholderText="Choose your gender" SelectionChanged="ColorComboBox_SelectionChanged_1" VerticalAlignment="Center" Height="20" HorizontalAlignment="Center">
                     <x:String>Mrs</x:String>
                     <x:String>Mr</x:String>
                     <x:String>Miss</x:String>
@@ -101,7 +102,7 @@
                         </MenuFlyout>
                     </DropDownButton.Flyout>
                 </DropDownButton>-->
-                <ComboBox Margin="5,0,0,0" Padding="1" Grid.Row="1" Grid.Column="1" x:Name="colorComboBox" Width="312" PlaceholderText="Choose preferred title" SelectionChanged="ColorComboBox_SelectionChanged" VerticalAlignment="Center" Height="20">
+                <ComboBox Padding="1" Grid.Row="1" Grid.Column="1" x:Name="colorComboBox" Width="309" PlaceholderText="Choose preferred title" SelectionChanged="ColorComboBox_SelectionChanged" VerticalAlignment="Center" Height="20" HorizontalAlignment="Center">
                     <x:String>Mrs</x:String>
                     <x:String>Mr</x:String>
                     <x:String>Miss</x:String>

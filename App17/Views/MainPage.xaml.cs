@@ -13,6 +13,7 @@ namespace App17.Views
         public MainPage()
         {
             InitializeComponent();
+            MainViewModel mvm = new MainViewModel();
         }
 
         private void ColorComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
