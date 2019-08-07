@@ -36,7 +36,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel>
-                <TextBlock Text="Made for you 😊" FontSize="46"></TextBlock>
+                <TextBlock Text="Made for you (insert binding here) 😊" FontSize="46"></TextBlock>
                 <TextBlock Text="All humans deserve equal" FontStyle="Italic"></TextBlock>
             </StackPanel>
 
