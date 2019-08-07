@@ -40,7 +40,7 @@
                     <TextBlock Name="MadeForYouText" Text="Made for you " FontSize="46" FontFamily="Segoe UI"></TextBlock>
                     <TextBlock Margin="10,0,0,0" FontSize="{Binding ElementName=MadeForYouText, Path=FontSize}" Text="{Binding ElementName=firstNameBox, Path=Text}" ></TextBlock>
                     <TextBlock Margin="10,0,0,0" FontSize="{Binding ElementName=MadeForYouText, Path=FontSize}" Text="{Binding ElementName=lastNameBox, Path=Text}"></TextBlock>
-                    <TextBlock Margin="10,0,0,0">😊</TextBlock>
+                    <TextBlock FontSize="{Binding ElementName=MadeForYouText, Path=FontSize}" Margin="10,0,0,0">😊</TextBlock>
                 </StackPanel>
                 
                 <TextBlock Text="All humans deserve equal" FontStyle="Italic"></TextBlock>
