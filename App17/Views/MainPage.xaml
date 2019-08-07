@@ -36,7 +36,11 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel>
-                <TextBlock Text="Made for you (insert binding here) 😊" FontSize="46"></TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Made for you 😊" FontSize="46" FontFamily="Segoe UI"></TextBlock>
+                    <TextBlock Text="{Binding ElementName=firstNameBox, Path=Text}" ></TextBlock>
+                </StackPanel>
+                
                 <TextBlock Text="All humans deserve equal" FontStyle="Italic"></TextBlock>
             </StackPanel>
 
@@ -114,7 +118,7 @@
                 </ComboBox>
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" FontStyle="Italic" Height="19">Please select your title that you would like to be referred to as</TextBlock>
                 <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">First Name</TextBlock>
-                <TextBox Height="33" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" PlaceholderText="First Name" Padding="10,3,6,5.9" Margin="6,0,6,0"/>
+                <TextBox Name="firstNameBox" Height="33" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" PlaceholderText="First Name" Padding="10,3,6,5.9" Margin="6,0,6,0"/>
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" FontStyle="Italic" Height="19">Please enter your first name</TextBlock>
                 <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" Height="19">Last name</TextBlock>
                 <TextBox Height="33" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" PlaceholderText="Last Name" Padding="10,3,6,5.9" Margin="6,0,6,0"/>
