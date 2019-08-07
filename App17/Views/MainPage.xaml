@@ -37,7 +37,7 @@
             </Grid.RowDefinitions>
             <StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Name="MadeForYouText" Text="Made for you 😊" FontSize="46" FontFamily="Segoe UI"></TextBlock>
+                    <TextBlock Name="MadeForYouText" Text="Made for you 😊 " FontSize="46" FontFamily="Segoe UI"></TextBlock>
                     <TextBlock FontSize="{Binding ElementName=MadeForYouText, Path=FontSize}" Text="{Binding ElementName=firstNameBox, Path=Text}" ></TextBlock>
                 </StackPanel>
                 
